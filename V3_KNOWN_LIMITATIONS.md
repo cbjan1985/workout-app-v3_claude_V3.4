@@ -1,0 +1,18 @@
+# Known limitations
+- Nothing has been built or run on a device yet.
+- Folder sync still uses V2 code (known failing); SAF picker not yet written.
+- Health Connect needs a native plugin and real device permissions; Fastrack data is only available if Fastrack Smart World writes it to Health Connect. Not started.
+- Excel media references: only YouTube URLs are attached; file names are flagged "not matched" until Library media assignment exists.
+- Demonstration videos cannot be generated here.
+- Health vault: if the password is forgotten the data cannot be recovered. One record per date.
+- Smoke tests ran in a desktop browser only; Android behaviour is unverified.
+- Folder access fix and Health Connect/Fastrack are not built (see V3_PROGRESS.md).
+- Custom workouts appear in the media list so you can attach GIFs/videos, but media for Library-only items is keyed by name.
+- Android permissions (MANAGE_EXTERNAL_STORAGE, READ_EXTERNAL_STORAGE, VIBRATE) are carried over from V2 for the old folder code; review before any Play Store release. Capacitor Filesystem/Share are added for Excel saving and sharing.
+- Health Tracker: body fat/muscle mass get no normal/abnormal label by design. Existing health records from the earlier V3 build keep working; muscle mass is now a percentage.
+- Rest between exercises is a global setting; per-exercise rest applies between sets.
+- Folder access: reading media in place needs 'Allow access to manage all files'. Cloud or restricted locations cannot be used. GifFolderPlugin.java has not been compiled against the real libraries; if the GitHub build fails on that file, send the error text.
+- Health Tracker records are no longer password protected or encrypted (removed at the user's request). Anyone who opens the app can read them.
+- The CB logo is redrawn as a vector inspired by the supplied image; the Android launcher icon is still the Capacitor default.
+- Projected HbA1c is a rough estimate and can differ a lot from a lab HbA1c.
+- Combined trend graph scales each line to its own range.

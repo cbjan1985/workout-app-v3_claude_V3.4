@@ -1,0 +1,15 @@
+MY WORKOUTS V3 - ANDROID APP PROJECT
+====================================
+No Android Studio needed. GitHub builds the app for you.
+
+1. Create a NEW repository on github.com (name it my-workouts-v3).
+2. Upload everything in this folder (www, android-overrides, package.json,
+   capacitor.config.json, patch_manifest.py, BUILD-WORKFLOW.yml).
+3. Add the build recipe: Add file > Create new file, name it
+   .github/workflows/build-apk.yml and paste the text from BUILD-WORKFLOW.yml.
+4. Open the Actions tab. The build starts by itself (6 to 10 minutes).
+5. Open the finished run, download "My-Workouts-V3-APK", unzip, install app-debug.apk.
+6. In the app: Workout Library > Allow folder access > switch on
+   "Allow access to manage all files". Your Workout_gif folder then syncs by itself.
+
+This app installs NEXT TO Version 1. It does not replace it.
